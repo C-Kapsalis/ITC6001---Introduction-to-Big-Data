@@ -1,8 +1,7 @@
 # User Similarity & Behavior Analysis on Last.fm  
 **Course**: ITC6001 – Introduction to Big Data  
 **Institution**: MSc in Data Science, The American College of Greece  
-**Team**: Christoforos Kapsalis, Charalampos Stavrogiannis  
-**Date**: Fall 2023  
+**Term**: Fall 2023  
 
 ## 📌 Overview  
 This project explores user activity, similarity, and community structures on the Last.fm music platform. Using user-artist interaction data and social graphs, we identify outliers, cluster users by listening behavior, and quantify relationships using cosine similarity and community detection methods.
