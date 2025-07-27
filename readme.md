@@ -1,6 +1,8 @@
 # User Similarity & Behavior Analysis on Last.fm  
 **Course**: ITC6001 – Introduction to Big Data  
+
 **Institution**: MSc in Data Science, The American College of Greece  
+
 **Term**: Fall 2023  
 
 ## 📌 Overview  
