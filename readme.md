@@ -7,7 +7,35 @@
 ## 📌 Overview  
 This project explores user activity, similarity, and community structures on the Last.fm music platform. Using user-artist interaction data and social graphs, we identify outliers, cluster users by listening behavior, and quantify relationships using cosine similarity and community detection methods.
 
-<pre> ## 📁 Project Structure . ├── data/ # Raw Last.fm datasets │ ├── artists.dat │ ├── tags.dat │ ├── user_artists.dat │ ├── user_friends.dat │ ├── user_taggedartists.dat │ ├── user_taggedartists-timestamps.dat │ └── README.md │ ├── results/ # Output files: CSVs and similarity matrices │ ├── Q3a_users.csv │ ├── neighbors-k-users.data │ └── ... │ ├── report/ # Final report, presentation, and documentation │ ├── ITC6001_Stavrogiannis_Kapsalis.docx │ ├── ITC6001 Final-Project-Fall-2023.pdf │ └── ITC_6001_presentation_Kapsalis_Stavrogiannis.pptx │ ├── src/ # Python script(s) │ └── analysis.py │ ├── requirements.txt # Python dependencies └── README.md # Project overview (this file) </pre>
+## 📁 Project Structure
+
+```
+.
+├── data/                       # Raw Last.fm datasets
+│   ├── artists.dat
+│   ├── tags.dat
+│   ├── user_artists.dat
+│   ├── user_friends.dat
+│   ├── user_taggedartists.dat
+│   ├── user_taggedartists-timestamps.dat
+│   └── README.md
+│
+├── results/                    # Output files: CSVs and similarity matrices
+│   ├── Q3a_users.csv
+│   ├── neighbors-k-users.data
+│   └── ...
+│
+├── report/                     # Final report, presentation, and documentation
+│   ├── ITC6001_Stavrogiannis_Kapsalis.docx
+│   ├── ITC6001 Final-Project-Fall-2023.pdf
+│   └── ITC_6001_presentation_Kapsalis_Stavrogiannis.pptx
+│
+├── src/                        # Python script(s)
+│   └── analysis.py
+│
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project overview (this file)
+```
 
 ## 🔧 How to Run
 
