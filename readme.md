@@ -1,76 +1,55 @@
-# User Similarity & Behavior Analysis on Last.fm  
-**Course**: ITC6001 – Introduction to Big Data  
-**Institution**: MSc in Data Science, The American College of Greece  
-**Team**: Christoforos Kapsalis, Charalampos Stavrogiannis  
-**Date**: Fall 2023  
+# User Behavior & Similarity Analysis on the Last.fm Dataset  
+*ITC6001 – Introduction to Big Data (MSc Data Science, ACG)*
 
-## 📌 Overview  
-This project explores user activity, similarity, and community structures on the Last.fm music platform. Using user-artist interaction data and social graphs, we identify outliers, cluster users by listening behavior, and quantify relationships using cosine similarity and community detection methods.
+## Overview  
+This project presents an analytical exploration of the Last.fm dataset to uncover patterns of user behavior, music preferences, and social connections. The dataset includes music listening habits, tags, friendships, and artist metadata for 1,892 users on the Last.fm platform.
 
-## 📁 Project Structure  
-.
-├── data/ # Raw Last.fm datasets
-│ ├── artists.dat
-│ ├── tags.dat
-│ ├── user_artists.dat
-│ ├── user_friends.dat
-│ ├── user_taggedartists.dat
-│ ├── user_taggedartists-timestamps.dat
-│ └── README.md
-├── results/ # Output files: CSVs and similarity matrices
-│ ├── Q3a_users.csv, neighbors-k-users.data, etc.
-├── report/ # Final report, presentation, and documentation
-│ ├── ITC6001_Stavrogiannis_Kapsalis.docx
-│ ├── ITC6001 Final-Project-Fall-2023.pdf
-│ └── ITC_6001_presentation_Kapsalis_Stavrogiannis.pptx
-├── src/ # Python script(s)
-│ └── analysis.py
-├── requirements.txt # Python dependencies
-└── README.md # This file
+The work is structured into six stages—from exploratory data analysis to user similarity scoring—using Python-based tools and methods consistent with big data principles.
 
+## Objectives  
+- Describe key features of the dataset and perform initial exploration  
+- Identify outliers in listening activity  
+- Quantify user-to-user similarity using cosine metrics  
+- Construct a graph-based representation of user connections  
+- Extract community structure using Louvain modularity  
+- Analyze social and musical overlap among clusters
 
-## 🔧 How to Run
+## Dataset  
+The dataset originates from the **Last.fm Music Social Network Dataset** and includes:  
+- `user_artists.dat`: Listening counts per user-artist pair  
+- `tags.dat`: Community tagging behavior  
+- `user_friends.dat`: User social graph  
+- `artists.dat`: Artist metadata  
+- `user_taggedartists.dat`: User-applied tags per artist
 
-1. Clone the repository:  
-   `git clone https://github.com/yourusername/lastfm-user-analysis`
+## Methodology  
+- **Data cleaning & preprocessing** using pandas and NumPy  
+- **Similarity analysis** via cosine similarity and k-nearest neighbors  
+- **Graph construction** with NetworkX  
+- **Community detection** using Louvain clustering  
+- **Visualization** of networks and tag distributions with matplotlib  
 
-2. Navigate to the project folder:  
-   `cd lastfm-user-analysis`
+## Tools  
+- Python 3  
+- pandas, NumPy  
+- NetworkX  
+- scikit-learn  
+- matplotlib  
 
-3. Install dependencies:  
-   `pip install -r requirements.txt`
+## Results  
+- Identification of super-listener users with unusually high activity  
+- Clear segmentation of music listeners based on artist overlap  
+- Social clusters showed moderate musical similarity, validating community structure  
+- Tags aligned with detected communities, suggesting consistency between user tastes and social links
 
-4. Run the main script:  
-   `python src/analysis.py`
+## Deliverables  
+- `ITC6001_code_file.py`: Source code  
+- Project Report (PDF & DOCX)  
+- Final Presentation (PPTX)
 
-Outputs will be saved in the `results/` directory.
+## Authors  
+- Christoforos Kapsalis  
+- Charalampos Stavrogiannis  
 
-## 📦 Dependencies  
-The project uses Python 3 with the following core libraries:
-- pandas
-- numpy
-- scikit-learn
-- networkx
-- matplotlib
-
-All dependencies are listed in `requirements.txt`.
-
-## 📊 Input Data  
-Stored in the `data/` directory. It contains six `.dat` files from the Last.fm academic dataset, covering user listening behavior, artist metadata, tags, and friendships.  
-See `data/README.md` for full file descriptions.
-
-## 📈 Output Data  
-Stored in `results/` and includes:
-- Outlier detection results (Z-score, IQR)
-- User and tag rankings
-- Cosine similarity matrices
-- K-nearest neighbor user clusters
-- Community detection assignments
-
-## 📎 Deliverables  
-The full report, presentation, and documentation are included in the `report/` folder:
-- Project write-up (DOCX + PDF)
-- Final presentation (PPTX)
-
-## 📝 License  
+## License  
 For academic and demonstration purposes only.
